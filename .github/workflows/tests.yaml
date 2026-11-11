@@ -491,7 +491,7 @@ jobs:
           # accuracy is important.
           ${{ github.repository_owner == 'prql' && github.event_name !=
           'schedule' }}
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v7
         with:
           files: cobertura.xml
           fail_ci_if_error: true
