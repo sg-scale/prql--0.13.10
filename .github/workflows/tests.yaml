@@ -277,7 +277,7 @@ jobs:
   #     - name: 📂 Checkout code
   #       uses: actions/checkout@v5
   #     - run: ./.github/workflows/scripts/set_version.sh
-  #     - uses: actions/setup-python@v6
+  #     - uses: actions/setup-python@v7
   #       with:
   #         python-version: "3.11"
   #     - name: 💰 Cache
@@ -362,7 +362,7 @@ jobs:
         with:
           crate: lychee
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
 
@@ -445,7 +445,7 @@ jobs:
       - name: 📂 Checkout code
         uses: actions/checkout@v5
       - run: ./.github/workflows/scripts/set_version.sh
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
       - uses: baptiste0928/cargo-install@v3
@@ -573,7 +573,7 @@ jobs:
       - name: 📂 Checkout code
         uses: actions/checkout@v5
       - run: rustup override set nightly-2025-11-10
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
       - uses: baptiste0928/cargo-install@v3

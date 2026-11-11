@@ -85,7 +85,7 @@ jobs:
           # the comma seemed over the top.
           save-if:
             ${{ github.ref == 'refs/heads/main' && inputs.features != '' }}
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         # python isn't natively installed on macos-15, so we need to install it
         if: ${{ inputs.os == 'macos-15' }}
         with:
